@@ -71,8 +71,9 @@ def budget_planner(username,password):
 
     else:
         print("That's alright we'll just figure out a different way")
+        choice = input("Would you like to save a percentage aside? Y/N \n").lower()
 
-        if input("Would you like to save a percentage aside? Y/N \n").lower() == "y":
+        if choice == "y":
             weekly_percentage = int(input("What percent would you like to set aside? (1%, 25%, 100% without the percent symbol) \n"))
 
             savings_amount = (weekly_percentage/100)* weekly_income
@@ -80,10 +81,13 @@ def budget_planner(username,password):
             
             print(f"To achieve your goal you should be saving {savings_amount} or {weekly_percentage} for {week_amount} weeks.")
 
-        else:
+        elif choice == "n":
             savings_amount = int(input("How much do you plan to save a week?"))
             week_amount = monetary_goal/savings_amount
             print(f"To achieve your goal you should be saving {savings_amount} for {week_amount} weeks.")
+        else:
+            print("ERROR: existing plan.")
+            return
             
 
 def main():

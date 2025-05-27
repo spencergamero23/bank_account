@@ -1,37 +1,40 @@
 # Overview
 
-{Provide a description of the software that you wrote and how it integrates with a Cloud Database. Describe how to use your program.}
+
 This is essentially a bank account. You type in your login or sign up and it'll store that information into a cloud database. From there you can update your info by making a savings account and a checking account. As well as making goals that you can work towards through the budget planner. Which stores the goals and can later be shown when you display your account information.
 
-{Describe your purpose for writing this software.}
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of the cloud database.}
+I wrote this software because I thought it would be a fun project to take on. I have some experience with SQL but have never really tried mongoDB. Also I wanted a little program that could help me solve how much I should save a week for my future expenses.
 
-[Software Demo Video](http://youtube.link.goes.here)
+
+
+[Software Demo Video](https://youtu.be/lxCqgfL7zLc)
 
 # Cloud Database
 
-{Describe the cloud database you are using.}
 
-{Describe the structure of the database that you created.}
+- I'm using mongoDB which is a No SQL cloud database.
+
+
+- The database I designed is used to store user account information for keeping track of their money as well as their goals.
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
 
-{Describe the programming language that you used and any libraries.}
+MongoDB to develop this software.
+
+
+- I used python for this.
+- I used the pymongo library as well as the datetime library
 
 # Useful Websites
 
 {Make a list of websites that you found helpful in this project}
 
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [MongoDB Docs](https://www.mongodb.com/docs/languages/python/pymongo-driver/current/get-started/#std-label-pymongo-get-started)
+- [Python MongoDB Tutorial using PyMongo (video)](https://www.youtube.com/watch?v=rE_bJl2GAY8&ab_channel=TechWithTim)
 
 # Future Work
-
-{Make a list of things that you need to fix, improve, and add in the future.}
-
-- Item 1
-- Item 2
-- Item 3
+- Make it so that instead of putting in a new value for your checkings or savings you just put how much you're adding to it.
+- For Check Account not showing id, username, and password.
+- Maybe making it an actual software that has a ui?
